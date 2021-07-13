@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/aviation-quiz/static/css/main.ae9e57f2.chunk.css",
+    "main.js": "/aviation-quiz/static/js/main.30881acc.chunk.js",
+    "main.js.map": "/aviation-quiz/static/js/main.30881acc.chunk.js.map",
+    "runtime-main.js": "/aviation-quiz/static/js/runtime-main.c89abe44.js",
+    "runtime-main.js.map": "/aviation-quiz/static/js/runtime-main.c89abe44.js.map",
+    "static/js/2.6df13837.chunk.js": "/aviation-quiz/static/js/2.6df13837.chunk.js",
+    "static/js/2.6df13837.chunk.js.map": "/aviation-quiz/static/js/2.6df13837.chunk.js.map",
+    "index.html": "/aviation-quiz/index.html",
+    "static/css/main.ae9e57f2.chunk.css.map": "/aviation-quiz/static/css/main.ae9e57f2.chunk.css.map",
+    "static/js/2.6df13837.chunk.js.LICENSE.txt": "/aviation-quiz/static/js/2.6df13837.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/aviation-quiz/static/media/bg.2f8c7701.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c89abe44.js",
+    "static/js/2.6df13837.chunk.js",
+    "static/css/main.ae9e57f2.chunk.css",
+    "static/js/main.30881acc.chunk.js"
+  ]
+}
