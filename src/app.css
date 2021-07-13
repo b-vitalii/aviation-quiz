@@ -1,0 +1,219 @@
+.app {
+  height: 100vh;
+  display: flex;
+  background-color: #d6b704;
+  color: white;
+}
+
+.main {
+  width: 85%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #d6b704),
+    url("images/bg.jpg") center;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 50%;
+  position: relative;
+}
+
+.timer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+}
+
+.bottom {
+  height: 50%;
+}
+
+.game {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.question {
+  width: 80%;
+  background-color: black;
+  border: rgb(252, 255, 81);
+  text-align: center;
+  border: 5px solid rgb(252, 255, 81);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.answer {
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  border: 1px solid white;
+  border-radius: 55px;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 10px 20px 10px;
+  cursor: pointer;
+}
+
+.answer:hover,
+.answer.active {
+  background: rgb(199, 43, 186);
+}
+
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: rgb(156, 0, 161);
+  }
+  20%,
+  40%,
+  60% {
+    background: rgb(150, 0, 137);
+  }
+  62%,
+  100% {
+    background: rgb(0, 255, 0);
+  }
+}
+
+.answer.wrong {
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: rgb(232, 0, 240);
+  }
+  20%,
+  40%,
+  60% {
+    background: rgb(199, 43, 186);
+  }
+  62%,
+  100% {
+    background: rgb(255, 0, 0);
+  }
+}
+
+.piramid {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moneyList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.moneyListItem.active {
+  background-color: rgb(2, 67, 247);
+}
+
+.moneyListItemNumber {
+  font-size: 18px;
+  font-weight: 100;
+  width: 30%;
+}
+
+.moneyListItemAmount {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.endText {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.start {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.gemeTitle {
+  color: black;
+  margin: 20px;
+}
+
+.startInput {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.startInput:focus {
+  outline: none;
+}
+
+.startBtn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 100px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #e7aa00 inset, 0 0 0 0 #e7aa00;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  transition: 0.15s ease-in-out;
+}
+.startBtn:hover {
+  box-shadow: 0 0 10px 0 #e7aa00 inset, 0 0 10px 4px #e7aa00;
+  color: #e7aa00;
+}
